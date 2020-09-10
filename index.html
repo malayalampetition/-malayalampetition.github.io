@@ -12,7 +12,18 @@
     <link rel="stylesheet" href="css/0.styles.73fc64b1.css">
     <link rel="icon" href="img/logo.png">
 
+    <script type="application/javascript">
+        var loadCounter = 0;
+        var loaded = function () {
+            loadCounter += 1;
+            if (loadCounter === 2) {
+                $("iframe").attr("height", "500px");
+                $(window).scrollTo(315, 0)
+            }
+        }
+    </script>
     <title>പി.എസ്.സിയുടെ മാതൃഭാഷാവഗണന അവസാനിപ്പിക്കുക!</title>
+
 </head>
 
 <body style="font-family:'Manjari'">
@@ -25,9 +36,8 @@
     <div class="jumbotron mb-0 d-flex align-items-center flex-column justify-content-center min-100" id="header">
         <br /><br /><br />
         <center>
-            <br /><br /><br />
-            <h1 class="display-3 py-5">പി.എസ്.സിയുടെ മാതൃഭാഷാവഗണന അവസാനിപ്പിക്കുക.</h1>
-            <h2>മുഖ്യമന്ത്രിക്ക് ഓണ്‍ലൈനില്‍ ഭീമഹരജി സമര്‍പ്പിക്കുന്നു.</h2>
+            <h1 class="display-3 py-5" style="font-size:4vw;">പി.എസ്.സിയുടെ മാതൃഭാഷാവഗണന അവസാനിപ്പിക്കുക.</h1>
+            <h2 class="display-3" style="font-size:2vw;">മുഖ്യമന്ത്രിക്ക് ഓണ്‍ലൈനില്‍ ഭീമഹരജി സമര്‍പ്പിക്കുന്നു.</h2>
         </center>
         <div class="row">
             <div class="card">
@@ -55,7 +65,7 @@
                                 ഭാഷയെയും
                                 സംസ്കാരത്തെയും വരുംതലമുറയ്ക്ക് അന്യമാക്കുന്ന ഈ നയം നമ്മുടെ നാടിന്റെ ഭാവിയെതന്നെ
                                 ഇല്ലായ്മചെയ്യും.</b></p>
-                                <br/>
+                        <br />
                         <div class="card">
                             <div class="container-fluid">
                                 <div class="row">
@@ -81,7 +91,7 @@
                 </div>
             </div>
         </div>
-        <br/>
+        <br />
         <div class="row">
             <div class="card" id="card_sponsor">
                 <div class="card-body">
@@ -146,8 +156,8 @@
                                 വിശ്വസ്തതയോടെ,</p>
                             <iframe
                                 src="https://docs.google.com/forms/d/e/1FAIpQLSd-eW80ioSxOv4_PArld7lTd1m0An1sDeqARXXKTs2dfOFc0w/viewform?embedded=true"
-                                width="100%" height="100%" frameborder="0" marginheight="0"
-                                marginwidth="0">Loading…</iframe>
+                                width="100%" height="1400px" frameborder="0" marginheight="0" marginwidth="0"
+                                onload="loaded()">Loading…</iframe>
                         </div>
                     </div>
                 </div>
